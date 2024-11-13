@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Portfolio | Ludiflex</title>
+</head>
+<body>
+    
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">PORTFOLIO</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+        
+      </nav>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-name">
+                <p>I'm <span class="typedText">Kristine Mae Gerina</span></p>
+            </div>
+            
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.instagram.com/tin.teynn/"><i class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.facebook.com/itsmekyut03/"><i class="uil uil-facebook"></i></a></div>
+                <div class="icon"><a href="mailto:kristinemaegerena37@gmail.com"><i class="uil uil-envelope"></i></a></div>
+                <div class="icon"><a href="https://github.com/tinteyn"><i class="uil uil-github"></i> </a></div>
+                <a href="Gerina-RESUME..pdf" class="btn"download>Download Resume</a>
+              </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="tine.png" alt="avatar">
+            </div>
+          </div>
+          
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+        <div class="top-header">
+            <h1>About Me</h1>
+        </div>
+        <div class="d-flex justify-content-center"> <!-- Updated to use d-flex for full centering -->
+            <div class="col-md-8">
+                <div class="about-info text-center mx-auto"> <!-- mx-auto centers the box within the col-md-8 -->
+                    <h3>My Introduction</h3>
+                    <p>Hello! My name is Kristine Mae Gerina, and I’m currently a third-year Computer Science student. Over the past few years, I've developed some interest in technology and problem-solving, and I’ve been honing my skills in areas such as software development, algorithms, and data structures. I’ve worked on several projects, ranging from simple applications, and I'm particularly interested in creating applications that help other students learn and explore more about coding.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+       <!-- -------------- PROJECT BOX ---------------- -->
+       <section class="section" id="projects">
+    <div class="center">
+        <h1>Projects</h1>
+    </div>
+    <div class="project-container d-flex justify-content-center align-items-center" style="text-align: center;">
+        <div class="project-box">
+            <i class="uil uil-briefcase-alt"></i>
+            <h3>Completed</h3>
+            <label>3 Finished Projects</label>
+        </div>
+    </div>
+</section>
+
+       
+       <!-- -------------- CONTACT BOX ---------------- -->
+       <section class="section" id="contact">
+        <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-email"></i>Email:<a href="mailto:kristinemaegerena37@gmail.com">kristinemaegerena37@gmail.com</a>
+                    <p><i class="uil uil-phone"></i> Tel: 0991249983</p>
+                </div>
+            </div>
+            <div class="col">
+                <form action="https://formspree.io/f/mdkozzdl" method="POST">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" name="name" placeholder="Name" required>
+                            <input type="email" class="input-field" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="text-area">
+                            <textarea name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+      <header class="header">
+
+         
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="#home" style="--i:0;" class = "active1">Home</a>
+            <a href="#about" style="--i:1;" class = "active2">About</a>
+            <a href="#skills" style="--i:3;" class = "active4">Skills</a>
+            <a href="#portfolio" style="--i:5;"class = "active6" >Portfolio</a>
+            <a href="#contact" style="--i:6;" class = "active7">Contact</a><hr />
+        </nav>
+    </header>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.instagram.com/tin.teynn/"><i class="uil uil-instagram"></i></a></div>
+            <div class="icon"><a href="https://www.facebook.com/itsmekyut03/"><i class="uil uil-facebook"></i></a></div>
+            <div class="icon"><a href="mailto:kristinemaegerena37@gmail.com"><i class="uil uil-envelope"></i></a></div>
+            <div class="icon"><a href="https://github.com/tinteyn"><i class="uil uil-github"></i> </a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Kristine Mae Gerina</a> - All rights reserved</p>
+        </div>
+    </footer>
+    </div>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
